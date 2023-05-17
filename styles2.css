@@ -109,6 +109,19 @@ nav {
   margin-bottom: 10px;
 }
 
+/* Agregar fecha en cada noticia */
+.container main .featured-article article .date {
+  font-size: 12px;
+  color: #888;
+  margin-bottom: 5px;
+}
+
+/* Agregar fecha en el encabezado */
+header .date {
+  font-size: 14px;
+  font-weight: bold;
+}
+
 /* Consulta de medios para dispositivos móviles */
 @media (max-width: 767px) {
   header {
@@ -154,9 +167,5 @@ nav {
   .container aside {
     display: flex;
     flex-direction: column;
-  }
-  
-  .container aside .advertisement {
-    margin-bottom: 10px;
   }
 }
