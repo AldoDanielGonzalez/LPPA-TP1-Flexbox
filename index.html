@@ -1,69 +1,94 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TP1 Flexbox - Grupo 3</title>
+  <link rel="stylesheet" href="normalize.css">
+  <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
+  <header>
+    <div class="container">
+      <h1>Nombre del Diario</h1>
+      <p class="date">Fecha</p>
+    </div>
+  </header>
 
-    <header>
-        <h1>Nombre del Diario</h1>
-        <p class="date">Fecha</p>
-      </header>
-      
-      <main>
-        <section class="main-news">
-          <article>
-            <img src="imagen1.jpg" alt="Noticia 1">
-            <h2>Título de la Noticia 1</h2>
-            <p>Breve descripción de la Noticia 1</p>
-            <a href="#">Leer más</a>
-          </article>
-          
-          <article>
-            <img src="imagen2.jpg" alt="Noticia 2">
-            <h2>Título de la Noticia 2</h2>
-            <p>Breve descripción de la Noticia 2</p>
-            <a href="#">Leer más</a>
-          </article>
-        </section>
-        
-        <section class="secondary-news">
-          <article>
-            <h2>Título de la Noticia 3</h2>
-            <a href="#">Leer más</a>
-          </article>
-          
-          <article>
-            <h2>Título de la Noticia 4</h2>
-            <a href="#">Leer más</a>
-          </article>
-        </section>
-        
-        <nav>
-          <ul>
-            <li><a href="#">Sección 1</a></li>
-            <li><a href="#">Sección 2</a></li>
-            <li><a href="#">Sección 3</a></li>
-          </ul>
-        </nav>
-        
-        <aside>
-          <div class="advertisement">
-            <img src="ad1.jpg" alt="Publicidad 1">
-          </div>
-          
-          <div class="advertisement">
-            <img src="ad2.jpg" alt="Publicidad 2">
-          </div>
-        </aside>
-      </main>
+  <nav>
+    <div class="container">
+      <span class="menu-icon">&#9776;</span>
+      <ul>
+        <li><a href="#">Sección 1</a></li>
+        <li><a href="#">Sección 2</a></li>
+        <li><a href="#">Sección 3</a></li>
+        <li><a href="#">Sección 4</a></li>
+      </ul>
+    </div>
+  </nav>
 
+  <main>
+    <section class="news-section">
+      <article class="featured-article">
+        <img src="imagen1.jpg" alt="Imagen Noticia 1">
+        <h2>Título Noticia 1</h2>
+        <p>Descripción breve de la noticia 1.</p>
+        <a href="#">Leer más</a>
+      </article>
 
+      <article class="featured-article">
+        <img src="imagen2.jpg" alt="Imagen Noticia 2">
+        <h2>Título Noticia 2</h2>
+        <p>Descripción breve de la noticia 2.</p>
+        <a href="#">Leer más</a>
+      </article>
+    </section>
 
+    <section class="news-section">
+      <article>
+        <h2>Título Noticia 3</h2>
+        <p>Descripción breve de la noticia 3.</p>
+        <a href="#">Leer más</a>
+      </article>
 
+      <article>
+        <h2>Título Noticia 4</h2>
+        <p>Descripción breve de la noticia 4.</p>
+        <a href="#">Leer más</a>
+      </article>
+
+      <article>
+        <h2>Título Noticia 5</h2>
+        <p>Descripción breve de la noticia 5.</p>
+        <a href="#">Leer más</a>
+      </article>
+
+      <article>
+        <h2>Título Noticia 6</h2>
+        <p>Descripción breve de la noticia 6.</p>
+        <a href="#">Leer más</a>
+      </article>
+
+      <!-- Agregar más noticias secundarias si es necesario -->
+    </section>
+
+    <aside>
+      <div class="advertisement">
+        <img src="ad1.jpg" alt="Publicidad 1">
+      </div>
+
+      <div class="advertisement">
+        <img src="ad2.jpg" alt="Publicidad 2">
+      </div>
+
+      <!-- Agregar más publicidades si es necesario -->
+    </aside>
+  </main>
+
+  <script>
+    // No se permite JavaScript, por lo tanto, no se agrega ningún script aquí.
+  </script>
 </body>
 </html>
