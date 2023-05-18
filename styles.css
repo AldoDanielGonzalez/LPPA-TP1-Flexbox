@@ -14,12 +14,13 @@ body {
 }
 
 header {
-  background-color: #333;
+  background-color: navy;
   color: #fff;
   padding: 10px 20px;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 header h1 {
@@ -105,8 +106,22 @@ nav {
 }
 
 .container aside .advertisement img {
-  width: 100%;
+  width: 10%;
   margin-bottom: 10px;
+  
+}
+
+/* Agregar fecha en cada noticia */
+.container main .featured-article article .date {
+  font-size: 12px;
+  color: #888;
+  margin-bottom: 5px;
+}
+
+/* Agregar fecha en el encabezado */
+header .date {
+  font-size: 10px;
+  font-weight: bold;
 }
 
 /* Consulta de medios para dispositivos móviles */
@@ -135,6 +150,12 @@ nav {
   .container main aside {
     flex-basis: 100%;
   }
+
+  .container aside .advertisement img {
+    width: 35%;
+    margin-bottom: 10px;
+  }
+  
 }
 
 /* Consulta de medios para escritorio */
@@ -154,9 +175,5 @@ nav {
   .container aside {
     display: flex;
     flex-direction: column;
-  }
-  
-  .container aside .advertisement {
-    margin-bottom: 10px;
   }
 }
