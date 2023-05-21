@@ -160,6 +160,15 @@ header .date {
 
 /* Consulta de medios para escritorio */
 @media (min-width: 768px) {
+
+  .menu {
+    display: flex;
+  }
+
+  .menu-icon {
+    display: none;
+  }
+
   .container main .featured-article {
     flex-wrap: wrap;
   }
