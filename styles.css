@@ -116,7 +116,7 @@ nav {
 .container aside .advertisement img {
   width: 10%;
   margin-bottom: 10px;
-  
+
 }
 
 /* Agregar fecha en cada noticia */
@@ -137,23 +137,23 @@ header .date {
   header {
     padding: 10px;
   }
-  
+
   header h1 {
     font-size: 20px;
   }
-  
+
   .menu {
     display: none;
   }
-  
+
   .menu-icon {
     display: block;
   }
-  
+
   .container main {
     flex-direction: column;
   }
-  
+
   .container main section,
   .container main aside {
     flex-basis: 100%;
@@ -163,7 +163,19 @@ header .date {
     width: 35%;
     margin-bottom: 10px;
   }
+
+  .responsive-banner {
+    flex-direction: column;
+    align-items: center;
+    width: 80% !important;
+    max-width: 80% !important;
+  }
   
+  .banner-text {
+    text-align: center;
+    margin-top: 10px;
+  }
+
 }
 
 /* Consulta de medios para escritorio */
@@ -180,17 +192,82 @@ header .date {
   .container main {
     flex-wrap: wrap;
   }
-  
+
   .container main article {
     flex-basis: 48%;
   }
-  
+
   .container main aside {
     flex-basis: 35%;
   }
-  
+
   .container aside {
     display: flex;
     flex-direction: column;
   }
+
+  .banner {
+    width: 90%;
+  }
+
+}
+
+.banner {
+  position: fixed;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 70%;
+  max-width: 70%;
+  background-color: rgba(0, 0, 0, 0.8);
+  padding: 10px;
+  border-radius: 10px;
+  z-index: 9999;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.banner a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.banner p {
+  margin: 0;
+  color: #fff;
+}
+
+.close-button {
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  width: 30px;
+  height: 30px;
+  background-color: rgba(0, 0, 0, 0.8);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.close-button::before,
+.close-button::after {
+  content: "";
+  position: absolute;
+  width: 16px;
+  height: 2px;
+  background-color: #fff;
+  transform-origin: center;
+}
+
+.close-button::before {
+  transform: rotate(45deg);
+}
+
+.close-button::after {
+  transform: rotate(-45deg);
 }
